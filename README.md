@@ -1,10 +1,20 @@
-# como instalar o react
+# informações importantes
 - `terminal` npx create-react-app nome-do-projeto
 - `npm start` para iniciar o projeto
+- `npm install` já resolve todas as nossas dependências
 - fiz a instalação do Bootstrap
 - `npm install bootstrap` mas vou fazer o teste usando apenas npm install
+- instalei o react-router-dom `npm install react-router-dom`
+- instalei o bootstrap-icons `npm install bootstrap-icons`
+- já tinha o fav icons no projeto
 
 
+# Anotações
+- a parte de cima onde está escrito Unitpac Afya é um botão
+- não consegui adicionar estilhos ao html, talvez seja por conflitos com o bootstrap
+- não consegui nem adicionar css in line
+- nem css em um arquivo separado
+- useNavigate precisa ficar dentor do Router
 
 # Getting Started with Create React App
 
