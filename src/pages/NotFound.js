@@ -1,0 +1,1 @@
+// Página 404 para rotas não encontradas
