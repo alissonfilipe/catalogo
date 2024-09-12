@@ -1,0 +1,19 @@
+/* ImageButton.module.css */
+
+.icon {
+    position: relative;
+    z-index: 10;
+  }
+  
+  img {
+    position: relative;
+    z-index: 5;
+  }
+  
+  /* Ocultar ícones quando a tela é pequena e a imagem é grande o suficiente para sobrepor */
+  @media (max-width: 768px) {
+    .icon {
+      display: none;
+    }
+  }
+  

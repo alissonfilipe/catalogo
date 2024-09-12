@@ -15,6 +15,8 @@
 - não consegui nem adicionar css in line
 - nem css em um arquivo separado
 - useNavigate precisa ficar dentor do Router
+- pelo visto vou ter que colocar os links de icons no imagebotton
+- forma de importa css no js `import styles from '../styles/ImageButton.module.css'`
 
 # Getting Started with Create React App
 
