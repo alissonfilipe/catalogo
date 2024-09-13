@@ -3,17 +3,17 @@ import logo from '../images/logo.png'
 import '../styles/ImageButton.module.css'
 
 function ImageButton() {
-    const navigate = useNavigate(); // Hook para navegação
+  const navigate = useNavigate(); // Hook para navegação
 
-    const handleClick = () => {
-        navigate('/'); // Redireciona para a página inicial
-    };
+  const handleClick = () => {
+    navigate('/'); // Redireciona para a página inicial
+  };
 
-    return (
-        <div className='position-relative ' style={{ paddingTop: '10px', width: '100%' }}>
-      
+  return (
+    <div className='position-relative ' style={{ paddingTop: '10px', width: '100%' }}>
+
       {/* Ícones à esquerda */}
-      <div className='d-flex align-items-center position-absolute start-0' style={{paddingTop:'19px'}}>
+      <div className='d-flex align-items-center position-absolute start-0' style={{ paddingTop: '14px', paddingLeft: '115px' }}>
         <a href="https://www.instagram.com" className='text-dark fs-3 me-3' target="_blank" rel="noopener noreferrer">
           <i className="bi bi-instagram"></i> {/* Ícone do Instagram */}
         </a>
@@ -33,19 +33,19 @@ function ImageButton() {
           <i className="bi bi-tiktok"></i> {/* Ícone do TikTok */}
         </a>
       </div>
-      
+
       {/* Imagem centralizada */}
       <div className='d-flex justify-content-center'>
-        <img 
+        <img
           src={logo}  // Usando a variável que contém o caminho da imagem
           alt="Logo"
-          style={{ cursor: 'pointer', width: '522px', height: 'auto' }} 
-          onClick={handleClick} 
+          style={{ cursor: 'pointer', width: '350px', height: 'auto' }}
+          onClick={handleClick}
         />
       </div>
-      
+
     </div>
-    );
+  );
 }
 
 export default ImageButton;
