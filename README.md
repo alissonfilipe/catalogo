@@ -1,4 +1,6 @@
 # informações importantes
+- NAS IMAGENS GRÁTIS NÃO POSSO PEGAR IMAGENS E DIZER QUE SÃO MINHAS
+- NAS IMAGENS NÃO POSSO COLOCAR O FUNDO DA UNITEPAC LÁ
 - `terminal` npx create-react-app nome-do-projeto
 - `npm start` para iniciar o projeto
 - `npm install` já resolve todas as nossas dependências
