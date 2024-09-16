@@ -1,0 +1,9 @@
+.footer {
+    background-color: #d66363;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* De relative para fixed */
+    bottom: 0;
+    width: 100%;
+  }
