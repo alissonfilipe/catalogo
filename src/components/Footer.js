@@ -16,6 +16,9 @@ const Footer = () => {
           <span className="footer-link">PORTAIS</span>
         </p>
       </div>
+      <div className="scrollable-div">
+        {/* imagem */}
+      </div>
     </footer>
   );
 };

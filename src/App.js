@@ -12,11 +12,9 @@ function App() {
       </div>
 
 
-      <Footer />  {/* Footer no mesmo fragmento */}
+
      
-      <div className="scrollable-div">
-        {/* imagem */}
-      </div>
+  
     </>
   );
 }
