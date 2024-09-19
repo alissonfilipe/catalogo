@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import ImageButton from "../components/ImageButton";
 import VideoPlayer from '../components/VideoPlayer';
 import Footer from '../components/Footer';
-import PartesDoCorpo from '../components/PartesDoCorpo';
+import ListaDePartes from '../components/ListaDePartes.js'
 
 
 // Página inicial com o vídeo de introdução
@@ -18,10 +18,10 @@ function Home() {
 
             {/* parte do vídeo da página */}
             <VideoPlayer />
-
+            
 
             {/* seção com as partes do corpo */}
-            <PartesDoCorpo/>
+            <ListaDePartes/>
 
             {/* Rodapé da página */}
             <Footer/>
