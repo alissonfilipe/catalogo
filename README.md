@@ -9,6 +9,12 @@
 - instalei o react-router-dom `npm install react-router-dom`
 - instalei o bootstrap-icons `npm install bootstrap-icons`
 - já tinha o fav icons no projeto
+- arquivos de textos necessários para o projeto foram adicionados
+- navBar foi unificada
+- no momento atual (19/09/2024) estou listando todas as partes do corpo
+- precisamos listar apenas aquelas que tem um link
+- idéia é iplemnetar uma função para renderizar apenas aqueles que estiverem link definido
+- mas primeiro temos que deixar a lista funcional
 
 
 # Anotações

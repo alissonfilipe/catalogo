@@ -4,6 +4,7 @@ import ImageButton from "../components/ImageButton";
 import VideoPlayer from '../components/VideoPlayer';
 import Footer from '../components/Footer';
 import ListaDePartes from '../components/ListaDePartes.js'
+import NavBar from '../components/NavBar.js'
 
 
 // Página inicial com o vídeo de introdução
@@ -11,10 +12,7 @@ function Home() {
     return (
         <>
             {/* nav bar da página */}
-            <Router>
-                <ImageButton />
-            </Router>
-            <Header />
+            <NavBar/>
 
             {/* parte do vídeo da página */}
             <VideoPlayer />
