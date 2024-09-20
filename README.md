@@ -15,6 +15,8 @@
 - precisamos listar apenas aquelas que tem um link
 - idéia é iplemnetar uma função para renderizar apenas aqueles que estiverem link definido
 - mas primeiro temos que deixar a lista funcional
+- lista de imagens que eu preciso adicionar
+- home --> ParteDoCorpo --> Visualizacao
 
 
 # Anotações

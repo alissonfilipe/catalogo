@@ -1,6 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from "../components/Header";
-import ImageButton from "../components/ImageButton";
+
 import VideoPlayer from '../components/VideoPlayer';
 import Footer from '../components/Footer';
 import ListaDePartes from '../components/ListaDePartes.js'
