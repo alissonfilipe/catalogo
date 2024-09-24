@@ -1,5 +1,7 @@
 // Cabeçalho do site
 
+import Pesquisa from "./Pesquisa"
+
 
 function Header() {
     return (
@@ -32,12 +34,8 @@ function Header() {
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2 border-danger" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-danger" type="submit">
-                <i className="bi bi-search fs-3 text-dark"></i> {/* Ícone de lupa */}
-        </button>
-      </form>
+      {/* Aqui fica a pesquisa*/}
+      <Pesquisa/>
     </div>
   </div>
 </nav>
