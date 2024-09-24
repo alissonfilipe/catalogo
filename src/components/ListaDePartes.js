@@ -26,7 +26,7 @@ function ListaDePartes() {
                 {partes.map((parte, index) => (
                     <li key={index} style={{ marginBottom: '10px' }}>
                         <a 
-                            href={`#eutômuitofudido`} // Aqui, você pode mudar o href para a URL que quiser
+                            href={parte} // Aqui, você pode mudar o href para a URL que quiser
                             style={{ textDecoration: 'none', color: 'blue' }} 
                         >
                             {parte}
