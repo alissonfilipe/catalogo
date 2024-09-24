@@ -24,7 +24,7 @@ function ListaDePartes() {
         <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '40px' }}>
             <ul style={{ listStyleType: 'none', paddingLeft: 0, width: '50%', maxWidth: '900px', minWidth: '30%' }}>
                 {partes.map((parte, index) => (
-                    <li key={index} style={{ marginBottom: '10px' }}>
+                    <li id={index} key={index} style={{ marginBottom: '10px' }}>
                         <a 
                             href={parte} // Aqui, você pode mudar o href para a URL que quiser
                             style={{ textDecoration: 'none', color: 'blue' }} 
