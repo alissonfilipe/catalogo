@@ -1,25 +1,36 @@
+import React from 'react';
 import VideoPlayer from '../components/VideoPlayer';
 import Footer from '../components/Footer';
-import ListaDePartes from '../components/ListaDePartes.js';
 import NavBar from '../components/NavBar.js';
+import { Link } from 'react-router-dom';
+import { Container, Row, Col, ListGroup } from 'react-bootstrap'; // Importando os componentes do Bootstrap
 
 function Home() {
-    const caminhoCorpo = "/text/textBodyPartsInPortuguese.txt"; // Caminho correto dentro da pasta public
-    const caminhoSistemaOsseo = "/text/sistemaOsseo.txt"; // Caminho correto para o sistema osseo
+    const sistemas = [
+        { nome: 'Sistema Esquelético', link: '/sistemas/esqueletico' },
+        // Adicione mais sistemas conforme necessário
+    ];
 
     return (
         <>
-            {/* nav bar da página */}
-            <NavBar/>
+            <NavBar />
 
-            {/* parte do vídeo da página */}
             <VideoPlayer />
 
-            {/* seção com as partes do corpo */}
-            <ListaDePartes texto={caminhoSistemaOsseo} sistema={'Ósseo'}/>
+            <Container className='text-center' style={{ paddingTop: '40px' }}>
+                <h1>Sistemas do Corpo</h1>
+                <ListGroup>
+                    {sistemas.map((sistema, index) => (
+                        <ListGroup.Item key={index}>
+                            <Link to={sistema.link} style={{ textDecoration: 'none', color: 'blue' }}>
+                                {sistema.nome}
+                            </Link>
+                        </ListGroup.Item>
+                    ))}
+                </ListGroup>
+            </Container>
 
-            {/* Rodapé da página */}
-            <Footer/>
+            <Footer />
         </>
     );
 }

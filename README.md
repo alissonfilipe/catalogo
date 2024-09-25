@@ -45,6 +45,28 @@
 - a troca tá descrita lá na análise de requisitos
 - a página da torca ainda deve ser criada
 - o nome da página seria algo como NomeDaParte 
+- 25/09/2024 --> 17:21
+- pelo jeito vou precisar de um arquivo por elemento da lista
+- a página home vai listar os sistemas que estão descritos na partes `Sistemas`
+- não sei se vou conseguir finalizar a tempo
+- fiz outras instalações do bootstrap
+- deu tudo certo, falta só deixar mais bonito
+- está tudo funcional mas você precisa rodar o comando npm install para instalar as dependências
+- parte do home tem apenas o sistema esquelético provisório deve ser feita algumas alterações nele 
+- a função lista os sistemas e o link
+
+# Sistemas 
+- Sistema Esquelético
+- Sistema Muscular
+- Sistema Nervoso
+- Sistema Endócrino
+- Sistema Cardiovascular
+- Sistema Respiratório
+- Sistema Digestivo
+- Sistema Urinário
+- Sistema Imunológico
+- Sistema Tegumentar
+- Sistema Reprodutivo
 
 # Getting Started with Create React App
 
