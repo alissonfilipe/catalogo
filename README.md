@@ -36,6 +36,9 @@
 - não devo me esquecer de mexer no id
 - preciso de uma página para ser acessada quando clica em por exemplo divisão da pelve
 - pra isso preciso criar um componente para usar em cada parte
+- foi adicionado o título que pode ser modificado e reutilizado
+- esse título é usado na lista de partes para rederizar o titulo da lista
+- a lista funciona com o arquivo txt e o titulo
 
 # Getting Started with Create React App
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 // Componente para exibir a lista de partes do corpo a partir de um arquivo .txt
-function ListaDePartes({ texto }) {
+function ListaDePartes({ texto ,sistema}) {
     const [partes, setPartes] = useState([]);
 
     useEffect(() => {
@@ -29,17 +29,18 @@ function ListaDePartes({ texto }) {
     }
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '40px' }}>
-            <ul style={{ listStyleType: 'none', paddingLeft: 0, width: '50%', maxWidth: '900px', minWidth: '30%' }}>
-                {partes.map((parte, index) => (
-                    <li id={index} key={index} style={{ marginBottom: '10px' }}>
-                        <a href={`#${parte}`} style={{ textDecoration: 'none', color: 'blue' }}>
-                            {parte}
-                        </a>
-                    </li>
-                ))}
-            </ul>
-        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '40px' }}>
+        <h1>{sistema}</h1>
+        <ul style={{ listStyleType: 'none', paddingLeft: 0, width: '50%', maxWidth: '900px', minWidth: '30%' }}>
+            {partes.map((parte, index) => (
+                <li id={index} key={index} style={{ marginBottom: '10px' }}>
+                    <a href={`#${parte}`} style={{ textDecoration: 'none', color: 'blue' }}>
+                        {parte}
+                    </a>
+                </li>
+            ))}
+        </ul>
+    </div>
     );
 }
 

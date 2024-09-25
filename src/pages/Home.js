@@ -16,7 +16,7 @@ function Home() {
             <VideoPlayer />
 
             {/* seção com as partes do corpo */}
-            <ListaDePartes texto={caminhoSistemaOsseo}/>
+            <ListaDePartes texto={caminhoSistemaOsseo} sistema={'Ósseo'}/>
 
             {/* Rodapé da página */}
             <Footer/>
