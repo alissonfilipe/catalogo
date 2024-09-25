@@ -1,21 +1,19 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom'; // Importa o Link
 
-// Componente para exibir a lista de partes do corpo a partir de um arquivo .txt
-function ListaDePartes({ texto ,sistema}) {
+function ListaDePartes({ texto, sistema }) {
     const [partes, setPartes] = useState([]);
 
     useEffect(() => {
         const carregarPartes = async () => {
             try {
-                const resposta = await fetch(texto); // Caminho do arquivo na pasta public
-                console.log('Resposta do fetch:', resposta);
+                const resposta = await fetch(texto);
                 if (!resposta.ok) {
                     throw new Error('Erro ao carregar o arquivo');
                 }
-                const textoRecebido = await resposta.text(); // Lê o conteúdo do arquivo
-                console.log('Texto recebido:', textoRecebido);
-                const listaPartes = textoRecebido.split('\n').map(parte => parte.trim()); // Divide o texto em linhas
-                setPartes(listaPartes); // Atualiza o estado com a lista de partes
+                const textoRecebido = await resposta.text();
+                const listaPartes = textoRecebido.split('\n').map(parte => parte.trim());
+                setPartes(listaPartes);
             } catch (erro) {
                 console.error('Erro ao carregar o arquivo:', erro);
             }
@@ -25,22 +23,22 @@ function ListaDePartes({ texto ,sistema}) {
     }, [texto]);
 
     if (partes.length === 0) {
-        return <div>Carregando...</div>; // Renderiza algo enquanto carrega
+        return <div>Carregando...</div>;
     }
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '40px' }}>
-        <h1>{sistema}</h1>
-        <ul style={{ listStyleType: 'none', paddingLeft: 0, width: '50%', maxWidth: '900px', minWidth: '30%' }}>
-            {partes.map((parte, index) => (
-                <li id={index} key={index} style={{ marginBottom: '10px' }}>
-                    <a href={`#${parte}`} style={{ textDecoration: 'none', color: 'blue' }}>
-                        {parte}
-                    </a>
-                </li>
-            ))}
-        </ul>
-    </div>
+            <h1>{sistema}</h1>
+            <ul style={{ listStyleType: 'none', paddingLeft: 0, width: '50%', maxWidth: '900px', minWidth: '30%' }}>
+                {partes.map((parte, index) => (
+                    <li key={index} style={{ marginBottom: '10px' }}>
+                        <Link to={`/parte/${parte}`} style={{ textDecoration: 'none', color: 'blue' }}>
+                            {parte}
+                        </Link>
+                    </li>
+                ))}
+            </ul>
+        </div>
     );
 }
 

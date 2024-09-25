@@ -39,6 +39,12 @@
 - foi adicionado o título que pode ser modificado e reutilizado
 - esse título é usado na lista de partes para rederizar o titulo da lista
 - a lista funciona com o arquivo txt e o titulo
+- 25/09/2024 --> 16:47
+- redirecionamento está funcional mas precisa modificar a página
+- parte detalhada é só um exemplo, irei trocar ainda
+- a troca tá descrita lá na análise de requisitos
+- a página da torca ainda deve ser criada
+- o nome da página seria algo como NomeDaParte 
 
 # Getting Started with Create React App
 
