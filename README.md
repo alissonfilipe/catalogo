@@ -19,6 +19,7 @@
 - home --> ParteDoCorpo --> Visualizacao
 
 
+
 # Anotações
 - a parte de cima onde está escrito Unitpac Afya é um botão
 - não consegui adicionar estilhos ao html, talvez seja por conflitos com o bootstrap
@@ -27,6 +28,14 @@
 - useNavigate precisa ficar dentor do Router
 - pelo visto vou ter que colocar os links de icons no imagebotton
 - forma de importa css no js `import styles from '../styles/ImageButton.module.css'`
+- 25/09/2024
+- a pasta text foi movida para a home 
+- fiz uma modificação para renderizar a lista de partes
+- a modificação é poder escolher qual lista você vai renderizar
+- no futuro serão vários sistemas além do ósseo e a home precisará mudar para a lista
+- não devo me esquecer de mexer no id
+- preciso de uma página para ser acessada quando clica em por exemplo divisão da pelve
+- pra isso preciso criar um componente para usar em cada parte
 
 # Getting Started with Create React App
 

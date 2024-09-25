@@ -1,12 +1,12 @@
-
 import VideoPlayer from '../components/VideoPlayer';
 import Footer from '../components/Footer';
-import ListaDePartes from '../components/ListaDePartes.js'
-import NavBar from '../components/NavBar.js'
+import ListaDePartes from '../components/ListaDePartes.js';
+import NavBar from '../components/NavBar.js';
 
-
-// Página inicial com o vídeo de introdução
 function Home() {
+    const caminhoCorpo = "/text/textBodyPartsInPortuguese.txt"; // Caminho correto dentro da pasta public
+    const caminhoSistemaOsseo = "/text/sistemaOsseo.txt"; // Caminho correto para o sistema osseo
+
     return (
         <>
             {/* nav bar da página */}
@@ -14,15 +14,14 @@ function Home() {
 
             {/* parte do vídeo da página */}
             <VideoPlayer />
-            
 
             {/* seção com as partes do corpo */}
-            <ListaDePartes/>
+            <ListaDePartes texto={caminhoSistemaOsseo}/>
 
             {/* Rodapé da página */}
             <Footer/>
         </>
-    )
+    );
 }
 
-export default Home
+export default Home;
