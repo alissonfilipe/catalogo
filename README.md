@@ -17,6 +17,7 @@
 - mas primeiro temos que deixar a lista funcional
 - lista de imagens que eu preciso adicionar
 - home --> ParteDoCorpo --> Visualizacao
+- fiz algumas alterações no header 
 
 
 
