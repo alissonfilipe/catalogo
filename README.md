@@ -61,6 +61,8 @@
 - ele deveria pesquisar na lista mas também pesquisou em outros lugares
 - ele faz diferenciação de letras minúsculas para maiúsculas
 - erro corrigido, agora graças ao className `lista-de-partes` não existe mais esse erro
+- 08/10/2024 --> 14:46
+- mais um erro foi descoberto que a tag do instagram não some, erro de responsividade. 
 
 # Sistemas 
 - Sistema Esquelético

@@ -1,9 +1,10 @@
 import React from 'react';
-import VideoPlayer from '../components/VideoPlayer';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar.js';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, ListGroup } from 'react-bootstrap'; // Importando os componentes do Bootstrap
+import ImagemDoCentro from '../components/ImagemDoCentro.js';
+import imagemDeAnatomia from '../images/ImagensCentralizadas/Anotomia1.jpg'
 
 function Home() {
     const sistemas = [
@@ -14,9 +15,7 @@ function Home() {
     return (
         <>
             <NavBar />
-
-            <VideoPlayer />
-
+            <ImagemDoCentro link={imagemDeAnatomia} nome={"Imagem do Home"}/>
             <Container className='text-center' style={{ paddingTop: '40px' }}>
                 <h1>Sistemas do Corpo</h1>
                 <ListGroup>
