@@ -67,6 +67,8 @@
 - quando você clica em uma letra ela redireciona a um negócio, o que não deve acontecer.
 - devo adiconar a Notfound
 - mudei o título para cima da imagem tanto no home quanto no sistema esquelético
+- 08/10/2024 --> 16:50
+- achei melhor deixar a lista um pouco mais distanciada das letras, pra mim ficou mais bonito visualmente
 
 # Sistemas 
 - Sistema Esquelético

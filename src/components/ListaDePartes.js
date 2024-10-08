@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'; // Importa o Link
 
+
 function ListaDePartes({ texto, sistema }) {
     const [partes, setPartes] = useState([]);
 
@@ -28,14 +29,16 @@ function ListaDePartes({ texto, sistema }) {
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '40px' }}>
-            
-            {/* Adiciona uma classe "lista-de-partes" ao ul */}
             <ul className="lista-de-partes" style={{ listStyleType: 'none', paddingLeft: 0, width: '50%', maxWidth: '900px', minWidth: '30%' }}>
                 {partes.map((parte, index) => (
                     <li key={index} style={{ marginBottom: '10px' }}>
-                        <Link to={`/parte/${parte}`} style={{ textDecoration: 'none', color: 'blue' }}>
-                            {parte}
-                        </Link>
+                        {parte.length === 1 ? (
+                            <h1>{parte}</h1>  // Se for uma letra, renderiza dentro de um H1
+                        ) : (
+                            <Link to={`/parte/${parte}`} style={{ textDecoration: 'none', color: 'blue' }}>
+                                <h5 style={{color:"#CE0056", paddingLeft:"6%"}}>{parte}</h5>
+                            </Link>  // Se for mais de uma letra, renderiza com Link
+                        )}
                     </li>
                 ))}
             </ul>
