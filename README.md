@@ -69,6 +69,8 @@
 - mudei o título para cima da imagem tanto no home quanto no sistema esquelético
 - 08/10/2024 --> 16:50
 - achei melhor deixar a lista um pouco mais distanciada das letras, pra mim ficou mais bonito visualmente
+- queria colocar o hover no h5 da lista mas não consegui
+- adicionada a página not found
 
 # Sistemas 
 - Sistema Esquelético
