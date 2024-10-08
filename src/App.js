@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/sistemas/esqueletico" element={<Esqueletico />} />
-          <Route path="/parte/:nomeParte" element={<ParteDetalhada />} />
+          <Route path="/parte" element={<ParteDetalhada />} />
           <Route path="*" element={<NotFound />} /> {/* Rota para Not Found */}
         </Routes>
       </div>

@@ -71,6 +71,9 @@
 - achei melhor deixar a lista um pouco mais distanciada das letras, pra mim ficou mais bonito visualmente
 - queria colocar o hover no h5 da lista mas não consegui
 - adicionada a página not found
+- 08/10/2024 --> 7:14
+- depois a gente tem que ver a questão da parte detalhada
+- fiz a remoção no `app.js` que ele redirecionava a uma página sem sentido e devemos rever isso
 
 # Sistemas 
 - Sistema Esquelético
