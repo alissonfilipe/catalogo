@@ -8,6 +8,7 @@ function Pesquisa() {
 
         // Remove o destaque de qualquer item que tenha sido destacado previamente
         const elementos = document.querySelectorAll("ul.lista-de-partes li");
+        let encontrou = false; // Variável para verificar se encontrou algo
         elementos.forEach((elemento) => {
             elemento.style.backgroundColor = ''; // Remove o fundo amarelo
         });
@@ -26,8 +27,14 @@ function Pesquisa() {
                     elemento.style.backgroundColor = ''; // Remove o fundo amarelo após o tempo
                 }, 2000);
 
+                encontrou = true; // Marca como encontrado
                 break; // Para a busca assim que encontrar o primeiro resultado
             }
+        }
+
+        // Se não encontrou nenhum item, exibe o popup
+        if (!encontrou) {
+            window.alert("Nenhuma parte encontrada com o termo pesquisado.");
         }
     };
 
