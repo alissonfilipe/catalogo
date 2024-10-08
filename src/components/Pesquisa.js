@@ -7,7 +7,7 @@ function Pesquisa() {
         e.preventDefault();
 
         // Remove o destaque de qualquer item que tenha sido destacado previamente
-        const elementos = document.querySelectorAll("li");
+        const elementos = document.querySelectorAll("ul.lista-de-partes li");
         elementos.forEach((elemento) => {
             elemento.style.backgroundColor = ''; // Remove o fundo amarelo
         });

@@ -56,6 +56,12 @@
 - parte do home tem apenas o sistema esquelético provisório deve ser feita algumas alterações nele 
 - a função lista os sistemas e o link
 
+- 08/10/2024 --> 14:20
+- verifiquei um problema na barra de pesquisa na forma que é de pesquisar
+- ele deveria pesquisar na lista mas também pesquisou em outros lugares
+- ele faz diferenciação de letras minúsculas para maiúsculas
+- erro corrigido, agora graças ao className `lista-de-partes` não existe mais esse erro
+
 # Sistemas 
 - Sistema Esquelético
 - Sistema Muscular
