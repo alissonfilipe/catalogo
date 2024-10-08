@@ -15,9 +15,10 @@ function Home() {
     return (
         <>
             <NavBar />
+            <h1 className='text-center' style={{paddingTop:"1%", paddingBottom:"2%"}}>Sistemas do Corpo</h1>
             <ImagemDoCentro link={imagemDeAnatomia} nome={"Imagem do Home"}/>
             <Container className='text-center' style={{ paddingTop: '40px' }}>
-                <h1>Sistemas do Corpo</h1>
+                
                 <ListGroup>
                     {sistemas.map((sistema, index) => (
                         <ListGroup.Item key={index}>

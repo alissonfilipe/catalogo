@@ -5,7 +5,7 @@ function ImagemDoCentro({link,nome}){
             src={link} 
             alt={nome}
             className="img-fluid d-block" 
-            style={{ height: '80%',width:'80%', objectFit: 'cover' }}
+            style={{ height: '100%',width:'80%', objectFit: 'cover' }}
         />
     </div>
     )

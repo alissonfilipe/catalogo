@@ -28,7 +28,7 @@ function ListaDePartes({ texto, sistema }) {
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '40px' }}>
-            <h1>{sistema}</h1>
+            
             {/* Adiciona uma classe "lista-de-partes" ao ul */}
             <ul className="lista-de-partes" style={{ listStyleType: 'none', paddingLeft: 0, width: '50%', maxWidth: '900px', minWidth: '30%' }}>
                 {partes.map((parte, index) => (
