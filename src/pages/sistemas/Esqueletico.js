@@ -3,6 +3,8 @@ import VideoPlayer from '../../components/VideoPlayer';
 import Footer from '../../components/Footer';
 import ListaDePartes from '../../components/ListaDePartes';
 import NavBar from '../../components/NavBar';
+import ImagemDoCentro from '../../components/ImagemDoCentro';
+import ImagemAnatomia2 from '../../images/ImagensCentralizadas/ImagemAnatomia2.jpg'
 
 function Esqueletico() {
     const caminhoSistemaOsseo = "/text/sistemaOsseo.txt"; // Caminho correto para o sistema esquelético
@@ -12,9 +14,8 @@ function Esqueletico() {
             {/* NavBar da página */}
             <NavBar />
 
-            {/* Parte do vídeo da página */}
-            <VideoPlayer />
 
+            <ImagemDoCentro link={ImagemAnatomia2} nome={"Anatomia 2"}/>
             {/* Seção com as partes do corpo */}
             <ListaDePartes texto={caminhoSistemaOsseo} sistema={'Sistema Esquelético'} />
 

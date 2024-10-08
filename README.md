@@ -62,7 +62,11 @@
 - ele faz diferenciação de letras minúsculas para maiúsculas
 - erro corrigido, agora graças ao className `lista-de-partes` não existe mais esse erro
 - 08/10/2024 --> 14:46
-- mais um erro foi descoberto que a tag do instagram não some, erro de responsividade. 
+- mais um erro foi descoberto que a tag do instagram não some, erro de responsividade.
+- a imagem foi adicionada no main agora falta adicionar no sistema esquelético 
+- 08/10/2024 --> 16:00
+- quando você clica em uma letra ela redireciona a um negócio, o que não deve acontecer.
+- devo adiconar a Notfound
 
 # Sistemas 
 - Sistema Esquelético
