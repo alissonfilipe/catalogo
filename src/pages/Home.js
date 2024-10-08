@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col, ListGroup } from 'react-bootstrap'; // Importando os componentes do Bootstrap
 import ImagemDoCentro from '../components/ImagemDoCentro.js';
 import imagemDeAnatomia from '../images/ImagensCentralizadas/Anotomia1.jpg'
+import Sistemas from '../components/Sistemas.js';
 
 function Home() {
     const sistemas = [
@@ -17,18 +18,7 @@ function Home() {
             <NavBar />
             <h1 className='text-center' style={{paddingTop:"1%", paddingBottom:"2%"}}>Sistemas do Corpo</h1>
             <ImagemDoCentro link={imagemDeAnatomia} nome={"Imagem do Home"}/>
-            <Container className='text-center' style={{ paddingTop: '40px' }}>
-                
-                <ListGroup>
-                    {sistemas.map((sistema, index) => (
-                        <ListGroup.Item key={index}>
-                            <Link to={sistema.link} style={{ textDecoration: 'none', color: 'blue' }}>
-                                {sistema.nome}
-                            </Link>
-                        </ListGroup.Item>
-                    ))}
-                </ListGroup>
-            </Container>
+            <Sistemas/>
 
             <Footer />
         </>

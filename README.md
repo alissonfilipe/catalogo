@@ -1,3 +1,7 @@
+# Imagens grátis
+- https://pixabay.com/pt/
+
+
 # informações importantes
 - NAS IMAGENS GRÁTIS NÃO POSSO PEGAR IMAGENS E DIZER QUE SÃO MINHAS
 - NAS IMAGENS NÃO POSSO COLOCAR O FUNDO DA UNITEPAC LÁ
@@ -71,9 +75,10 @@
 - achei melhor deixar a lista um pouco mais distanciada das letras, pra mim ficou mais bonito visualmente
 - queria colocar o hover no h5 da lista mas não consegui
 - adicionada a página not found
-- 08/10/2024 --> 7:14
+- 08/10/2024 --> 17:14
 - depois a gente tem que ver a questão da parte detalhada
 - fiz a remoção no `app.js` que ele redirecionava a uma página sem sentido e devemos rever isso
+- ainda falta organizar os sistemas
 
 # Sistemas 
 - Sistema Esquelético
