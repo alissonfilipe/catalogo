@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'; // Importa o Link
 
 
-function ListaDePartes({ texto, sistema }) {
+function ListaDePartes({ texto }) {
     const [partes, setPartes] = useState([]);
 
     useEffect(() => {

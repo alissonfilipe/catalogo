@@ -80,6 +80,10 @@
 - fiz a remoção no `app.js` que ele redirecionava a uma página sem sentido e devemos rever isso
 - ainda falta organizar os sistemas
 
+- 09/10/2024 --> 16:39
+- fiz mudança no nome do arquivo parte detalhada pois ainda vai ter o Arquivo chamado parteDetalhada
+- O arquivo ListaPartes não precisa mais do título então retirei
+
 # Sistemas 
 - Sistema Esquelético
 - Sistema Muscular
