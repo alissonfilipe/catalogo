@@ -74,17 +74,25 @@ const sistemasData = [
 
 function Sistemas() {
     return (
-        <div className="d-flex flex-wrap justify-content-center">
-            {sistemasData.map((sistema, index) => (
-                <Link key={index} to={sistema.link} style={{ textDecoration: 'none', margin: '10px' }}>
-                    <Card 
-                        imagem={sistema.imagem} 
-                        titulo={sistema.titulo} 
-                        texto={sistema.texto} 
-                    />
-                </Link>
-            ))}
+        <div className="container my-4" style={{ paddingTop: "20px" }}>
+            <div className="row justify-content-center">
+                {sistemasData.map((sistema, index) => (
+                    <div key={index} className="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-3">
+                        <Link to={sistema.link} style={{ textDecoration: 'none', paddingBottom: "30px" }}>
+                            <Card
+                                imagem={sistema.imagem}
+                                titulo={sistema.titulo}
+                                texto={sistema.texto}
+                            />
+                        </Link>
+                    </div>
+                ))}
+            </div>
         </div>
+
+
+
+
     );
 }
 
