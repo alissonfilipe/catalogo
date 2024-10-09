@@ -83,6 +83,15 @@
 - 09/10/2024 --> 16:39
 - fiz mudança no nome do arquivo parte detalhada pois ainda vai ter o Arquivo chamado parteDetalhada
 - O arquivo ListaPartes não precisa mais do título então retirei
+- 09/10/2024 --> 17:20
+- percebi que vou ter vários problemas na questão do desenvolvimento dos seguintes arquivos
+- Parte
+- ParteDetalhada
+- App
+- nessa brincadeira é justamente para poupar trabalho com o que o react oferece para a gente
+- renderização dinâmicas mais reaproveitamento de código
+- primeiro fiz o arquivo parte depois vou fazer o arquivo parte detalhada
+- porém o arquivo parte ainda não está pronto, falta muita coisa para desenvolver
 
 # Sistemas 
 - Sistema Esquelético

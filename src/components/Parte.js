@@ -1,19 +1,25 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import NavBar from './NavBar';
-import Footer from './Footer';
+import Footer from '../components/Footer';
+import NavBar from '../components/NavBar';
 
-function ParteDetalhada() {
-    const { nomeParte } = useParams();
+const Parte = () => {
+  const { parteId } = useParams();
 
-    return (
-        <div>
-            <NavBar/>
-            <h2 className='text-center'>{nomeParte}</h2>
-            {/* Aqui você pode adicionar mais informações ou lógica para mostrar detalhes */}
-            <Footer/>
-        </div>
-    );
-}
+  return (
+    <>
+      {/* NavBar da página */}
+      <NavBar />
 
-export default ParteDetalhada;
+      <div style={{ textAlign: 'center', padding: '20px' }}>
+        <h1>{parteId}</h1>
+        <p>Aqui é onde colocaremos as informações sobre {parteId} no futuro.</p>
+      </div>
+
+      {/* Rodapé da página */}
+      <Footer />
+    </>
+  );
+};
+
+export default Parte;
