@@ -8,17 +8,14 @@ import imagemDeAnatomia from '../images/ImagensCentralizadas/Anotomia1.jpg'
 import Sistemas from '../components/Sistemas.js';
 
 function Home() {
-    const sistemas = [
-        { nome: 'Sistema Esquelético', link: '/sistemas/esqueletico' },
-        // Adicione mais sistemas conforme necessário
-    ];
+
 
     return (
         <>
             <NavBar />
-            <h1 className='text-center' style={{paddingTop:"1%", paddingBottom:"2%"}}>Sistemas do Corpo</h1>
-            <ImagemDoCentro link={imagemDeAnatomia} nome={"Imagem do Home"}/>
-            <Sistemas/>
+            <h1 className='text-center' style={{ paddingTop: "1%", paddingBottom: "2%" }}>Sistemas do Corpo</h1>
+            <ImagemDoCentro link={imagemDeAnatomia} nome={"Imagem do Home"} />
+            <Sistemas />
 
             <Footer />
         </>
