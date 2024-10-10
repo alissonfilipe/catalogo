@@ -93,6 +93,18 @@
 - primeiro fiz o arquivo parte depois vou fazer o arquivo parte detalhada
 - porém o arquivo parte ainda não está pronto, falta muita coisa para desenvolver
 
+- 09/10/2024 --> 16:42
+- não consegui fazer muito mas implementei a lógica do arquivo parte que queria implementar
+- agora é só registrar na lista que vai poder colocar quantas partes você quiser
+- porém existem outras atulizações principalmente na questão da visualização da imagem
+- preciso por exemplo-->
+- Pelve como título
+- imagem a esquerda + o tipo de visão a direita
+- uma pequena descrição abaixo do tipo de visão
+- vai ter vários tipos de visão
+- talvez eu precise criar um arquivo tipo de visão
+- para registrar tem que adicionar os campos no arquivo chamado `dadosPartes.js`
+
 # Sistemas 
 - Sistema Esquelético
 - Sistema Muscular

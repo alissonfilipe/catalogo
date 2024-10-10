@@ -1,24 +1,32 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Footer from '../components/Footer';
-import NavBar from '../components/NavBar';
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import { partes } from '../components/dadosPartes'; // Importe os dados das partes
+import NotFound from '../pages/NotFound';
 
 const Parte = () => {
-  const { parteId } = useParams();
+  const { parteId } = useParams(); // Pega o ID da parte da URL
+  const parte = partes.esqueletico.find(p => p.id === parteId); // Busca a parte específica nos dados
+
+  if (!parte) {
+    return <NotFound/>; // Se o ID não for encontrado
+  }
 
   return (
-    <>
-      {/* NavBar da página */}
-      <NavBar />
+    <Container>
+      <Row className="mt-5">
+        <Col md={6}>
+          {/* Renderizando a imagem da parte */}
+          <Image src={parte.imagem} alt={parte.titulo} fluid />
+        </Col>
 
-      <div style={{ textAlign: 'center', padding: '20px' }}>
-        <h1>{parteId}</h1>
-        <p>Aqui é onde colocaremos as informações sobre {parteId} no futuro.</p>
-      </div>
-
-      {/* Rodapé da página */}
-      <Footer />
-    </>
+        <Col md={6}>
+          {/* Título e descrição da parte */}
+          <h2>{parte.titulo}</h2>
+          <p>{parte.descricao}</p>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 
