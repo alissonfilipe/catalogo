@@ -11,6 +11,12 @@ import femurImage11 from '../images/PartesDoCorpo/femur/11.png';
 //DIVISÃO DA PELVE
 import disisaoDaPelve14 from '../images/PartesDoCorpo/divisaoDapelve/14.png'
 
+// LIGAMENTOS DO JOELHO
+import ligamentosDoJoelho5 from '../images/PartesDoCorpo/ligamentosDojoelho/5.png'
+import ligamentosDoJoelho6 from '../images/PartesDoCorpo/ligamentosDojoelho/6.png'
+import ligamentosDoJoelho7 from '../images/PartesDoCorpo/ligamentosDojoelho/7.png'
+import ligamentosDoJoelho8 from '../images/PartesDoCorpo/ligamentosDojoelho/8.png'
+
 export const partes = {
   esqueletico: [
     {
@@ -47,7 +53,10 @@ export const partes = {
       titulo: "ligamentos do joelho",
       descricao: "não precisa de descrição",
       imagens: [
-        { src: disisaoDaPelve14, titulo: "Vista Lateral da divisão da Pelve" }
+        { src: ligamentosDoJoelho5, titulo: "Vista anterior do Ligamentos do Joelho" },
+        { src: ligamentosDoJoelho6, titulo: "Vista medial do Ligamentos do Joelho" },
+        { src: ligamentosDoJoelho7, titulo: "Vista lateral do Ligamentos do Joelho" },
+        { src: ligamentosDoJoelho8, titulo: "Vista posterior do Ligamentos do Joelho" }
 
       ]
     }
