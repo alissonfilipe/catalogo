@@ -8,6 +8,9 @@ import femurImage9 from '../images/PartesDoCorpo/femur/9.png';
 import femurImage10 from '../images/PartesDoCorpo/femur/10.png';
 import femurImage11 from '../images/PartesDoCorpo/femur/11.png';
 
+//DIVISÃO DA PELVE
+import disisaoDaPelve14 from '../images/PartesDoCorpo/divisaoDapelve/14.png'
+
 export const partes = {
   esqueletico: [
     {
@@ -28,6 +31,24 @@ export const partes = {
         { src: femurImage9, titulo: "Vista Anterior do Fêmur" },
         { src: femurImage10, titulo: "Vista Posterior do Fêmur" },
         { src: femurImage11, titulo: "Vista Posterior do Fêmur" }
+      ]
+    },
+    {
+      id: "divisão da pelve",
+      titulo: "divisão da pelve",
+      descricao: "não precisa de descrição",
+      imagens: [
+        { src: disisaoDaPelve14, titulo: "Vista Lateral da divisão da Pelve" }
+
+      ]
+    },
+    {
+      id: "ligamentos do joelho",
+      titulo: "ligamentos do joelho",
+      descricao: "não precisa de descrição",
+      imagens: [
+        { src: disisaoDaPelve14, titulo: "Vista Lateral da divisão da Pelve" }
+
       ]
     }
     // Outras partes podem ser adicionadas aqui
