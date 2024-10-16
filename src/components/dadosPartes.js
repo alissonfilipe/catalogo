@@ -17,6 +17,10 @@ import ligamentosDoJoelho6 from '../images/PartesDoCorpo/ligamentosDojoelho/6.pn
 import ligamentosDoJoelho7 from '../images/PartesDoCorpo/ligamentosDojoelho/7.png'
 import ligamentosDoJoelho8 from '../images/PartesDoCorpo/ligamentosDojoelho/8.png'
 
+// TIBIA
+import tibia12 from '../images/PartesDoCorpo/tibia/12.png'
+import tibia13 from '../images/PartesDoCorpo/tibia/13.png'
+
 export const partes = {
   esqueletico: [
     {
@@ -57,6 +61,18 @@ export const partes = {
         { src: ligamentosDoJoelho6, titulo: "Vista medial do Ligamentos do Joelho" },
         { src: ligamentosDoJoelho7, titulo: "Vista lateral do Ligamentos do Joelho" },
         { src: ligamentosDoJoelho8, titulo: "Vista posterior do Ligamentos do Joelho" }
+
+      ]
+    },
+    {
+      id: "tibia",
+      titulo: "tibia",
+      descricao: "não precisa de descrição",
+      imagens: [
+        { src: tibia12, titulo: "Vista anterior da tibia" },
+        { src: tibia13, titulo: "Vista posterior da tibia" }
+        
+
 
       ]
     }
