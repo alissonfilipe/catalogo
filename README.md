@@ -108,6 +108,8 @@
 - 16/10/2024 --> 17:17
 - já estou implementando tudo
 - fiz uma mudança no arquivo `dadosParte` para usar o mesmo número correspondendete da imagem
+- foi emplementado toda a parte da parte 
+
 
 # Sistemas 
 - Sistema Esquelético
