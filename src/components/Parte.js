@@ -16,23 +16,29 @@ const Parte = () => {
 
   return (
     <>
-    <NavBar/>
-    <Container className="mt-5">
-      <h1 className="mb-4 text-center">{parte.titulo}</h1> {/* Nome da parte no topo, centralizado */}
-      
-      {/* Renderizando as imagens e os títulos relacionados */}
-      {parte.imagens.map((img, index) => (
-        <Row key={index} className="mb-4">
-          <Col md={6} className="d-flex justify-content-center">
-            <Image src={img.src} alt={img.titulo} fluid />
-          </Col>
-          <Col md={6} className="d-flex flex-column justify-content-center">
-            <h3>{img.titulo}</h3>
-          </Col>
-        </Row>
-      ))}
-    </Container>
-    <Footer/>
+      <NavBar />
+      <Container className="mt-5">
+        <h1 className="mb-4 text-center">{parte.titulo}</h1> {/* Nome da parte no topo, centralizado */}
+
+        {/* Renderizando as imagens e os títulos relacionados */}
+        {parte.imagens.map((img, index) => (
+          <Row key={index} className="mb-4">
+            <Col md={4} className="d-flex justify-content-center">
+              {/* Definindo o tamanho da imagem com classes personalizadas */}
+              <Image 
+                src={img.src} 
+                alt={img.titulo} 
+                className="img-thumbnail" // Adiciona borda e estilo
+                style={{ width: '150px', height: 'auto' }} // Ajuste de tamanho para ser menor
+              />
+            </Col>
+            <Col md={8} className="d-flex flex-column justify-content-center">
+              <h3>{img.titulo}</h3>
+            </Col>
+          </Row>
+        ))}
+      </Container>
+      <Footer />
     </>
   );
 };
