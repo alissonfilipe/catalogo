@@ -21,6 +21,13 @@ import ligamentosDoJoelho8 from '../images/PartesDoCorpo/ligamentosDojoelho/8.pn
 import tibia12 from '../images/PartesDoCorpo/tibia/12.png'
 import tibia13 from '../images/PartesDoCorpo/tibia/13.png'
 
+//TORNOZELO DO PE
+import tornozeloDoPe1 from '../images/PartesDoCorpo/TornozeloDoPe/1.png'
+import tornozeloDoPe2 from '../images/PartesDoCorpo/TornozeloDoPe/2.png'
+import tornozeloDoPe3 from '../images/PartesDoCorpo/TornozeloDoPe/3.png'
+import tornozeloDoPe4 from '../images/PartesDoCorpo/TornozeloDoPe/4.png'
+
+
 export const partes = {
   esqueletico: [
     {
@@ -72,7 +79,17 @@ export const partes = {
         { src: tibia12, titulo: "Vista anterior da tibia" },
         { src: tibia13, titulo: "Vista posterior da tibia" }
         
-
+      ]
+    },
+    {
+      id: "tornozelo do pé",
+      titulo: "tornozelo do pé",
+      descricao: "não precisa de descrição",
+      imagens: [
+        { src: tornozeloDoPe1, titulo: "Vista Plantar do tornozelo do Pé" },
+        { src: tornozeloDoPe2, titulo: "Vista dorsal do tornozelo do Pé" },
+        { src: tornozeloDoPe3, titulo: "Vista medial do tornozelo do Pé" },
+        { src: tornozeloDoPe4, titulo: "Vista lateral do tornozelo do Pé" }
 
       ]
     }
