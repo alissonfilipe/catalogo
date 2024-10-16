@@ -1,5 +1,9 @@
-import pelveImage1 from '../images/PartesDoCorpo/pelve/15.png';
-import pelveImage2 from '../images/PartesDoCorpo/pelve/16.png';
+// PELVE
+import pelveImage15 from '../images/PartesDoCorpo/pelve/15.png';
+import pelveImage16 from '../images/PartesDoCorpo/pelve/16.png';
+import pelveImage17 from '../images/PartesDoCorpo/pelve/17.png';
+
+//FEMUR
 import femurImage1 from '../images/PartesDoCorpo/femur/9.png';
 import femurImage2 from '../images/PartesDoCorpo/femur/10.png';
 
@@ -10,8 +14,9 @@ export const partes = {
       titulo: "Pelve",
       descricao: "A pelve é uma estrutura óssea localizada na base da coluna vertebral.",
       imagens: [
-        { src: pelveImage1, titulo: "Vista Frontal da Pelve" },
-        { src: pelveImage2, titulo: "Vista Lateral da Pelve" }
+        { src: pelveImage15, titulo: "Vista Lateral Pelve Esquerda" },
+        { src: pelveImage16, titulo: "Vista Medial Pelve Esquerda" },
+        { src: pelveImage17, titulo: "Vista Anterior" }
       ]
     },
     {
