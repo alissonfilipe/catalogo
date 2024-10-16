@@ -1,0 +1,22 @@
+/* Estilo para a div que envolve a imagem e o título */
+.parte-card {
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+    padding: 15px;
+  }
+  
+  /* Quando o mouse passa sobre o card */
+  .parte-card:hover {
+    transform: translateY(-5px); /* Elevação do card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+    cursor: pointer;
+  }
+  
+  /* Estilo para o link que envolve a div */
+  .parte-link {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Mantém a cor do texto original */
+  }
+  
