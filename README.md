@@ -105,6 +105,10 @@
 - talvez eu precise criar um arquivo tipo de visão
 - para registrar tem que adicionar os campos no arquivo chamado `dadosPartes.js`
 
+- 16/10/2024 --> 17:17
+- já estou implementando tudo
+- fiz uma mudança no arquivo `dadosParte` para usar o mesmo número correspondendete da imagem
+
 # Sistemas 
 - Sistema Esquelético
 - Sistema Muscular

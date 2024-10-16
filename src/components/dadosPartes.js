@@ -4,8 +4,9 @@ import pelveImage16 from '../images/PartesDoCorpo/pelve/16.png';
 import pelveImage17 from '../images/PartesDoCorpo/pelve/17.png';
 
 //FEMUR
-import femurImage1 from '../images/PartesDoCorpo/femur/9.png';
-import femurImage2 from '../images/PartesDoCorpo/femur/10.png';
+import femurImage9 from '../images/PartesDoCorpo/femur/9.png';
+import femurImage10 from '../images/PartesDoCorpo/femur/10.png';
+import femurImage11 from '../images/PartesDoCorpo/femur/11.png';
 
 export const partes = {
   esqueletico: [
@@ -24,8 +25,9 @@ export const partes = {
       titulo: "Fêmur",
       descricao: "O fêmur é o osso mais longo e resistente do corpo humano.",
       imagens: [
-        { src: femurImage1, titulo: "Vista Anterior do Fêmur" },
-        { src: femurImage2, titulo: "Vista Posterior do Fêmur" }
+        { src: femurImage9, titulo: "Vista Anterior do Fêmur" },
+        { src: femurImage10, titulo: "Vista Posterior do Fêmur" },
+        { src: femurImage11, titulo: "Vista Posterior do Fêmur" }
       ]
     }
     // Outras partes podem ser adicionadas aqui
