@@ -1,6 +1,7 @@
 import ImageButton from "../components/ImageButton";
-import Header from "../components/Header";
+
 import { useEffect } from "react";
+
 
 function NavBar() {
 
@@ -24,7 +25,8 @@ function NavBar() {
       <ImageButton />
       
       {/* Header embaixo */}
-      <Header />
+      {/* Retirei a parte do header */}
+      
     </nav>
   );
 }
