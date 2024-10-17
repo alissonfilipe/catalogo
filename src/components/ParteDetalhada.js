@@ -19,17 +19,24 @@ const ParteDetalhada = () => {
   return (
     <>
       <NavBar />
-      <h1 className='text-center' style={{paddingTop:"90px"}}>{parte.titulo}</h1>
-      <div style={{ margin: '2rem', display: 'flex', alignItems: 'center' }}>
-        <div style={{ flex: 1, paddingRight: '2rem' }}>
+      <h1 className='text-center' style={{ paddingTop: '90px' }}>{parte.titulo}</h1>
+      <div 
+        style={{
+          display: 'flex', // Mantém o layout lado a lado
+          justifyContent: 'center', // Centraliza o conteúdo horizontalmente na página
+          alignItems: 'flex-start', // Alinha o conteúdo no topo
+          margin: '2rem auto', // Centraliza o bloco na página
+          maxWidth: '900px', // Define uma largura máxima para o conteúdo
+        }}
+      >
+        <div style={{ paddingRight: '2rem' }}>
           <Image 
             src={imagemDetalhada.src} 
             alt={imagemDetalhada.titulo} 
-            style={{ width: '100%', height: 'auto' }} // Imagem ocupa 100% da largura disponível
+            style={{ width: '300px', height: 'auto' }} // Define o tamanho da imagem
           />
         </div>
         <div style={{ flex: 1 }}>
-          
           <h3>{imagemDetalhada.titulo}</h3> {/* Título da imagem */}
           <p>{imagemDetalhada.descricao}</p> {/* Descrição da parte */}
         </div>
