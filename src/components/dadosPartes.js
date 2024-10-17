@@ -33,66 +33,55 @@ export const partes = {
     {
       id: "pelve",
       titulo: "Pelve",
-      descricao: "A pelve é uma estrutura óssea localizada na base da coluna vertebral.",
       imagens: [
-        { src: pelveImage15, titulo: "Vista Lateral Pelve Esquerda" },
-        { src: pelveImage16, titulo: "Vista Medial Pelve Esquerda" },
-        { src: pelveImage17, titulo: "Vista Anterior" }
+        { src: pelveImage15, titulo: "Vista Lateral Pelve Esquerda", descricao: "A visão lateral da pelve mostra a posição e o formato dos ossos na lateral do corpo." },
+        { src: pelveImage16, titulo: "Vista Medial Pelve Esquerda", descricao: "A vista medial mostra os detalhes internos da pelve." },
+        { src: pelveImage17, titulo: "Vista Anterior", descricao: "A vista anterior destaca a parte frontal da pelve." }
       ]
     },
     {
       id: "femur",
       titulo: "Fêmur",
-      descricao: "O fêmur é o osso mais longo e resistente do corpo humano.",
       imagens: [
-        { src: femurImage9, titulo: "Vista Anterior do Fêmur" },
-        { src: femurImage10, titulo: "Vista Posterior do Fêmur" },
-        { src: femurImage11, titulo: "Vista Posterior do Fêmur" }
+        { src: femurImage9, titulo: "Vista Anterior do Fêmur", descricao: "Vista frontal do osso mais longo do corpo humano, o fêmur." },
+        { src: femurImage10, titulo: "Vista Posterior do Fêmur", descricao: "A vista posterior mostra a parte traseira do fêmur." },
+        { src: femurImage11, titulo: "Vista Posterior do Fêmur", descricao: "Uma segunda imagem da parte traseira do fêmur." }
       ]
     },
     {
       id: "divisão da pelve",
-      titulo: "divisão da pelve",
-      descricao: "não precisa de descrição",
+      titulo: "Divisão da Pelve",
       imagens: [
-        { src: disisaoDaPelve14, titulo: "Vista Lateral da divisão da Pelve" }
-
+        { src: disisaoDaPelve14, titulo: "Vista Lateral da Divisão da Pelve", descricao: "Mostra a divisão lateral dos ossos da pelve." }
       ]
     },
     {
       id: "ligamentos do joelho",
-      titulo: "ligamentos do joelho",
-      descricao: "não precisa de descrição",
+      titulo: "Ligamentos do Joelho",
       imagens: [
-        { src: ligamentosDoJoelho5, titulo: "Vista anterior do Ligamentos do Joelho" },
-        { src: ligamentosDoJoelho6, titulo: "Vista medial do Ligamentos do Joelho" },
-        { src: ligamentosDoJoelho7, titulo: "Vista lateral do Ligamentos do Joelho" },
-        { src: ligamentosDoJoelho8, titulo: "Vista posterior do Ligamentos do Joelho" }
-
+        { src: ligamentosDoJoelho5, titulo: "Vista Anterior dos Ligamentos do Joelho", descricao: "A vista anterior dos ligamentos que conectam o joelho." },
+        { src: ligamentosDoJoelho6, titulo: "Vista Medial dos Ligamentos do Joelho", descricao: "Mostra os ligamentos na parte medial do joelho." },
+        { src: ligamentosDoJoelho7, titulo: "Vista Lateral dos Ligamentos do Joelho", descricao: "A visão lateral detalha os ligamentos laterais do joelho." },
+        { src: ligamentosDoJoelho8, titulo: "Vista Posterior dos Ligamentos do Joelho", descricao: "A visão posterior dos ligamentos na parte traseira do joelho." }
       ]
     },
     {
       id: "tibia",
-      titulo: "tibia",
-      descricao: "não precisa de descrição",
+      titulo: "Tíbia",
       imagens: [
-        { src: tibia12, titulo: "Vista anterior da tibia" },
-        { src: tibia13, titulo: "Vista posterior da tibia" }
-        
+        { src: tibia12, titulo: "Vista Anterior da Tíbia", descricao: "A parte frontal da tíbia, localizada abaixo do joelho." },
+        { src: tibia13, titulo: "Vista Posterior da Tíbia", descricao: "A parte traseira da tíbia." }
       ]
     },
     {
       id: "tornozelo do pé",
-      titulo: "tornozelo do pé",
-      descricao: "não precisa de descrição",
+      titulo: "Tornozelo do Pé",
       imagens: [
-        { src: tornozeloDoPe1, titulo: "Vista Plantar do tornozelo do Pé" },
-        { src: tornozeloDoPe2, titulo: "Vista dorsal do tornozelo do Pé" },
-        { src: tornozeloDoPe3, titulo: "Vista medial do tornozelo do Pé" },
-        { src: tornozeloDoPe4, titulo: "Vista lateral do tornozelo do Pé" }
-
+        { src: tornozeloDoPe1, titulo: "Vista Plantar do Tornozelo", descricao: "A vista plantar mostra a parte inferior do tornozelo." },
+        { src: tornozeloDoPe2, titulo: "Vista Dorsal do Tornozelo", descricao: "Vista da parte superior do tornozelo." },
+        { src: tornozeloDoPe3, titulo: "Vista Medial do Tornozelo", descricao: "Mostra a parte interna do tornozelo." },
+        { src: tornozeloDoPe4, titulo: "Vista Lateral do Tornozelo", descricao: "A vista externa lateral do tornozelo." }
       ]
     }
-    // Outras partes podem ser adicionadas aqui
   ]
 };

@@ -31,7 +31,7 @@ const ParteDetalhada = () => {
         <div style={{ flex: 1 }}>
           
           <h3>{imagemDetalhada.titulo}</h3> {/* Título da imagem */}
-          <p>{parte.descricao}</p> {/* Descrição da parte */}
+          <p>{imagemDetalhada.descricao}</p> {/* Descrição da parte */}
         </div>
       </div>
       <Footer />
