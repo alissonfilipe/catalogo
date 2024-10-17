@@ -19,6 +19,7 @@ const ParteDetalhada = () => {
   return (
     <>
       <NavBar />
+      <h1 className='text-center' style={{paddingTop:"90px"}}>{parte.titulo}</h1>
       <div style={{ margin: '2rem', display: 'flex', alignItems: 'center' }}>
         <div style={{ flex: 1, paddingRight: '2rem' }}>
           <Image 
@@ -28,9 +29,9 @@ const ParteDetalhada = () => {
           />
         </div>
         <div style={{ flex: 1 }}>
-          <h1>{parte.titulo}</h1>
-          <p>{parte.descricao}</p> {/* Descrição da parte */}
+          
           <h3>{imagemDetalhada.titulo}</h3> {/* Título da imagem */}
+          <p>{parte.descricao}</p> {/* Descrição da parte */}
         </div>
       </div>
       <Footer />

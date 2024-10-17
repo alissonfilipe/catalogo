@@ -13,7 +13,7 @@ function Home() {
     return (
         <>
             <NavBar />
-            <h1 className='text-center' style={{ paddingTop: "1%", paddingBottom: "2%" }}>Sistemas do Corpo</h1>
+            <h1 className='text-center' style={{ paddingTop: "90px", paddingBottom: "2%" }}>Sistemas do Corpo</h1>
             <ImagemDoCentro link={imagemDeAnatomia} nome={"Imagem do Home"} />
             <Sistemas />
 

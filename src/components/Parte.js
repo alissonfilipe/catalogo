@@ -19,7 +19,7 @@ const Parte = () => {
     <>
       <NavBar />
       <Container className="mt-5">
-        <h1 className="mb-4 text-center">{parte.titulo}</h1> {/* Nome da parte no topo, centralizado */}
+        <h1 className="mb-4 text-center" style={{paddingTop: "30px"}}>{parte.titulo}</h1> {/* Nome da parte no topo, centralizado */}
 
         {/* Renderizando as imagens e os títulos relacionados */}
         {parte.imagens.map((img, index) => (

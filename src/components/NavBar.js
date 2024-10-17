@@ -7,7 +7,7 @@ function NavBar() {
 
   useEffect(() => {
     // Adiciona padding-top ao body para evitar sobreposição com a NavBar fixa
-    document.body.style.paddingTop = '190px'; 
+    document.body.style.paddingTop = '70px'; 
   }, []);
 
   return (
