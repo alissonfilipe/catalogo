@@ -112,6 +112,9 @@
 
 - 17/10/2024 --> 13:45
 - fiz de folhas de estilo para a pasta styles
+- 17/10/2024 --> 14:36
+- O navBar no site oficial é pequerno e vou retirar a parte que o pessoal
+- não queria e deixar a pesquisa na parte de cima
 
 # Sistemas 
 - Sistema Esquelético
