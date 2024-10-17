@@ -1,7 +1,7 @@
 // Rodapé do site
 
 import React from 'react';
-import './Footer.css';
+import '../styles/Footer.css';
 
 
 const Footer = () => {

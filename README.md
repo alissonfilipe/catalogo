@@ -110,6 +110,8 @@
 - fiz uma mudança no arquivo `dadosParte` para usar o mesmo número correspondendete da imagem
 - foi emplementado toda a parte da parte 
 
+- 17/10/2024 --> 13:45
+- fiz de folhas de estilo para a pasta styles
 
 # Sistemas 
 - Sistema Esquelético
