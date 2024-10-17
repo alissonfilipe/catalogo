@@ -24,7 +24,7 @@ const Parte = () => {
         {/* Renderizando as imagens e os títulos relacionados */}
         {parte.imagens.map((img, index) => (
           <a href={`/sistemas/esqueletico/parte/${parteId}/parteDetalhada/${index}`} key={index} className="parte-link"> {/* Link que envolve toda a div */}
-            <Row className="mb-4 parte-card">
+            <Row className="mb-4 parte-card" style={{ display: 'flex', alignItems: 'center' }}>
               <Col md={4} className="d-flex justify-content-center">
                 <Image 
                   src={img.src} 
