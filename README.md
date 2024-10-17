@@ -115,6 +115,8 @@
 - 17/10/2024 --> 14:36
 - O navBar no site oficial é pequerno e vou retirar a parte que o pessoal
 - não queria e deixar a pesquisa na parte de cima
+- 17/10/2024 --> 17:29
+- tentando aplicar zoom com lupa
 
 # Sistemas 
 - Sistema Esquelético
