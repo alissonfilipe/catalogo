@@ -1,22 +1,29 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import Home from './pages/Home';
-import Esqueletico from './pages/sistemas/Esqueletico'; // Importe o componente do sistema esquelético
-import Parte from './components/Parte'; // Importe o componente para os detalhes
-import ParteDetalhada from './components/ParteDetalhada'; // Importe o componente para a parte detalhada
-import NotFound from './pages/NotFound'; // Importe a página NotFound
+import Esqueletico from './pages/sistemas/Esqueletico';
+import Parte from './components/Parte';
+import ParteDetalhada from './components/ParteDetalhada';
+import NotFound from './pages/NotFound';
+import Footer from './components/Footer'; // Importe o Footer
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/sistemas/esqueletico" element={<Esqueletico />} />
-          <Route path="/sistemas/esqueletico/parte/:parteId" element={<Parte />} />
-          <Route path="/sistemas/esqueletico/parte/:parteId/parteDetalhada/:parteDetalhadaId" element={<ParteDetalhada />} /> {/* Nova rota */}
-          <Route path="*" element={<NotFound />} /> {/* Rota para Not Found */}
-        </Routes>
+        {/* Conteúdo principal */}
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/sistemas/esqueletico" element={<Esqueletico />} />
+            <Route path="/sistemas/esqueletico/parte/:parteId" element={<Parte />} />
+            <Route path="/sistemas/esqueletico/parte/:parteId/parteDetalhada/:parteDetalhadaId" element={<ParteDetalhada />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
+
+        {/* Rodapé global */}
+        <Footer />
       </div>
     </Router>
   );

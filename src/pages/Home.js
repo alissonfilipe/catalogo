@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../components/Footer';
 import NavBar from '../components/NavBar.js';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, ListGroup } from 'react-bootstrap'; // Importando os componentes do Bootstrap
@@ -17,7 +16,7 @@ function Home() {
             <ImagemDoCentro link={imagemDeAnatomia} nome={"Imagem do Home"} />
             <Sistemas />
 
-            <Footer />
+
         </>
     );
 }

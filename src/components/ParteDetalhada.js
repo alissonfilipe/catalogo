@@ -4,7 +4,6 @@ import { Image } from 'react-bootstrap';
 import { partes } from '../components/dadosPartes'; // Importe os dados das partes
 import NotFound from '../pages/NotFound';
 import NavBar from './NavBar';
-import Footer from './Footer';
 
 const ParteDetalhada = () => {
   const { parteId, parteDetalhadaId } = useParams(); // Pega os IDs da URL
@@ -31,7 +30,7 @@ const ParteDetalhada = () => {
     <>
       <NavBar />
       <h1 className='text-center' style={{ paddingTop: '90px' }}>{parte.titulo}</h1>
-      <div 
+      <div
         style={{
           display: 'flex', // Mantém o layout lado a lado
           justifyContent: 'center', // Centraliza o conteúdo horizontalmente na página
@@ -40,26 +39,26 @@ const ParteDetalhada = () => {
           maxWidth: '900px', // Define uma largura máxima para o conteúdo
         }}
       >
-        <div 
-          style={{ 
-            position: 'relative', 
+        <div
+          style={{
+            position: 'relative',
             paddingRight: '2rem',
-            width: '300px', 
-            height: 'auto' 
+            width: '300px',
+            height: 'auto'
           }}
           onMouseMove={handleMouseMove}
           onMouseEnter={() => setShowZoom(true)}
           onMouseLeave={() => setShowZoom(false)}
         >
-          <Image 
-            src={imagemDetalhada.src} 
-            alt={imagemDetalhada.titulo} 
+          <Image
+            src={imagemDetalhada.src}
+            alt={imagemDetalhada.titulo}
             style={{
-              width: '100%', 
+              width: '100%',
               height: 'auto'
             }}
           />
-          
+
           {/* Área de zoom */}
           {showZoom && (
             <div
@@ -85,7 +84,7 @@ const ParteDetalhada = () => {
           <p>{imagemDetalhada.descricao}</p> {/* Descrição da parte */}
         </div>
       </div>
-      <Footer />
+
     </>
   );
 };

@@ -1,6 +1,6 @@
 // src/pages/sistemas/Esqueletico.js
 
-import Footer from '../../components/Footer';
+
 import ListaDePartes from '../../components/ListaDePartes';
 import NavBar from '../../components/NavBar';
 import ImagemDoCentro from '../../components/ImagemDoCentro';
@@ -14,13 +14,12 @@ function Esqueletico() {
             {/* NavBar da página */}
             <NavBar />
 
-            <h1 className='text-center' style={{ paddingTop: "90px", paddingBottom: "2%", color: "#211D1D"}}>Sistema esquelético</h1>
+            <h1 className='text-center' style={{ paddingTop: "90px", paddingBottom: "2%", color: "#211D1D" }}>Sistema esquelético</h1>
             <ImagemDoCentro link={ImagemAnatomia2} nome={"Anatomia 2"} />
             {/* Seção com as partes do corpo */}
-            <ListaDePartes texto={caminhoSistemaOsseo}/>
+            <ListaDePartes texto={caminhoSistemaOsseo} />
 
-            {/* Rodapé da página */}
-            <Footer />
+
         </>
     );
 }
