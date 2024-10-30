@@ -118,6 +118,13 @@
 - 17/10/2024 --> 17:29
 - tentando aplicar zoom com lupa
 
+- 30/10/2024
+- precisa corrigir erros de resposividade em diversas páginas para dispositivos móveis
+- foi instalado o serve globalmente
+- tem um bug nos dispositivos móveis iphone google crome na hora da renderização da lista
+- npm install -g serve `comando para instalar o serve`
+- serve -s build `comando para rodar o serve`
+
 # Sistemas 
 - Sistema Esquelético
 - Sistema Muscular
