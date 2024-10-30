@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react';
+import { Helmet } from 'react-helmet'; // Importe o Helmet
 import Home from './pages/Home';
 import Esqueletico from './pages/sistemas/Esqueletico';
 import Parte from './components/Parte';
@@ -11,6 +12,11 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <Helmet>
+          <title>UNITPAC | Afya</title> {/* Defina seu título aqui */}
+          <link rel="icon" href="/favicon-256.png" /> {/* Defina seu favicon aqui */}
+        </Helmet>
+
         {/* Conteúdo principal */}
         <div className="content">
           <Routes>
