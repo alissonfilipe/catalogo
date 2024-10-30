@@ -28,59 +28,115 @@ import tornozeloDoPe3 from '../images/PartesDoCorpo/TornozeloDoPe/3.png'
 import tornozeloDoPe4 from '../images/PartesDoCorpo/TornozeloDoPe/4.png'
 
 
+// DESCRIÇÕES
+let descricaoVistaLateralPelveEsquerda = `A vista lateral da pelve esquerda revela uma estrutura complexa e poderosa, projetada para suportar o peso do corpo
+ e fornecer estabilidade. Nessa perspectiva, destacam-se os ossos principais: o osso ilíaco, com sua ampla curvatura, forma a parte superior da pelve e oferece
+  superfície para a inserção de vários músculos importantes. A crista ilíaca aparece proeminente, se estendendo ao longo do topo do osso e servindo como ponto
+   de ancoragem para músculos abdominais e lombares.
+Abaixo do osso ilíaco, o ísquio emerge na parte inferior e posterior da pelve, 
+formando uma estrutura arredondada que suporta o peso ao sentarmos. O púbis, na frente, 
+conecta-se ao lado direito através da sínfise púbica, uma articulação fibrocartilaginosa que permite flexibilidade e amortecimento.
+Na vista lateral, também se nota o acetábulo, a cavidade que abriga a cabeça do fêmur, criando a articulação do quadril.
+ Esta área é reforçada por ligamentos e músculos que conferem movimento e força. Em conjunto, esses elementos estruturais
+  fazem da pelve uma região essencial para a estabilidade e o movimento corporal, equilibrando mobilidade e resistência.`
+
+let descricaoVistaMedialPelveEsquerda = `A vista medial mostra os detalhes internos da pelve.`;
+
+let descricaoVistaAnteriorPelve = `A vista anterior destaca a parte frontal da pelve.`;
+
+
+// Fêmur
+let descricaoVistaAnteriorDoFemur = `Vista frontal do osso mais longo do corpo humano, o fêmur.`;
+
+let descricaoVistaPosteriorDoFemur1 = `A vista posterior mostra a parte traseira do fêmur.`;
+
+let descricaoVistaPosteriorDoFemur2 = `Uma segunda imagem da parte traseira do fêmur.`;
+
+
+// Divisão da Pelve
+let descricaoVistaLateralDaDivisaoDaPelve = `Mostra a divisão lateral dos ossos da pelve.`;
+
+
+// Ligamentos do Joelho
+let descricaoVistaAnteriorDosLigamentosDoJoelho = `A vista anterior dos ligamentos que conectam o joelho.`;
+
+let descricaoVistaMedialDosLigamentosDoJoelho = `Mostra os ligamentos na parte medial do joelho.`;
+
+let descricaoVistaLateralDosLigamentosDoJoelho = `A visão lateral detalha os ligamentos laterais do joelho.`;
+
+let descricaoVistaPosteriorDosLigamentosDoJoelho = `A visão posterior dos ligamentos na parte traseira do joelho.`;
+
+
+// Tíbia
+let descricaoVistaAnteriorDaTibia = `A parte frontal da tíbia, localizada abaixo do joelho.`;
+
+let descricaoVistaPosteriorDaTibia = `A parte traseira da tíbia.`;
+
+
+// Tornozelo do Pé
+let descricaoVistaPlantarDoTornozelo = `A vista plantar mostra a parte inferior do tornozelo.`;
+
+let descricaoVistaDorsalDoTornozelo = `Vista da parte superior do tornozelo.`;
+
+let descricaoVistaMedialDoTornozelo = `Mostra a parte interna do tornozelo.`;
+
+let descricaoVistaLateralDoTornozelo = `A vista externa lateral do tornozelo.`;
+
+
+
 export const partes = {
   esqueletico: [
     {
       id: "pelve",
       titulo: "Pelve",
       imagens: [
-        { src: pelveImage15, titulo: "Vista Lateral Pelve Esquerda", descricao: "A visão lateral da pelve mostra a posição e o formato dos ossos na lateral do corpo." },
-        { src: pelveImage16, titulo: "Vista Medial Pelve Esquerda", descricao: "A vista medial mostra os detalhes internos da pelve." },
-        { src: pelveImage17, titulo: "Vista Anterior", descricao: "A vista anterior destaca a parte frontal da pelve." }
+        { src: pelveImage15, titulo: "Vista Lateral Pelve Esquerda", descricao: descricaoVistaLateralPelveEsquerda },
+        { src: pelveImage16, titulo: "Vista Medial Pelve Esquerda", descricao: descricaoVistaMedialPelveEsquerda },
+        { src: pelveImage17, titulo: "Vista Anterior", descricao: descricaoVistaAnteriorPelve }
       ]
     },
     {
       id: "femur",
       titulo: "Fêmur",
       imagens: [
-        { src: femurImage9, titulo: "Vista Anterior do Fêmur", descricao: "Vista frontal do osso mais longo do corpo humano, o fêmur." },
-        { src: femurImage10, titulo: "Vista Posterior do Fêmur", descricao: "A vista posterior mostra a parte traseira do fêmur." },
-        { src: femurImage11, titulo: "Vista Posterior do Fêmur", descricao: "Uma segunda imagem da parte traseira do fêmur." }
+        { src: femurImage9, titulo: "Vista Anterior do Fêmur", descricao: descricaoVistaAnteriorDoFemur },
+        { src: femurImage10, titulo: "Vista Posterior do Fêmur", descricao: descricaoVistaPosteriorDoFemur1 },
+        { src: femurImage11, titulo: "Vista Posterior do Fêmur", descricao: descricaoVistaPosteriorDoFemur2 }
       ]
     },
     {
       id: "divisão da pelve",
       titulo: "Divisão da Pelve",
       imagens: [
-        { src: disisaoDaPelve14, titulo: "Vista Lateral da Divisão da Pelve", descricao: "Mostra a divisão lateral dos ossos da pelve." }
+        { src: disisaoDaPelve14, titulo: "Vista Lateral da Divisão da Pelve", descricao: descricaoVistaLateralDaDivisaoDaPelve }
       ]
     },
     {
       id: "ligamentos do joelho",
       titulo: "Ligamentos do Joelho",
       imagens: [
-        { src: ligamentosDoJoelho5, titulo: "Vista Anterior dos Ligamentos do Joelho", descricao: "A vista anterior dos ligamentos que conectam o joelho." },
-        { src: ligamentosDoJoelho6, titulo: "Vista Medial dos Ligamentos do Joelho", descricao: "Mostra os ligamentos na parte medial do joelho." },
-        { src: ligamentosDoJoelho7, titulo: "Vista Lateral dos Ligamentos do Joelho", descricao: "A visão lateral detalha os ligamentos laterais do joelho." },
-        { src: ligamentosDoJoelho8, titulo: "Vista Posterior dos Ligamentos do Joelho", descricao: "A visão posterior dos ligamentos na parte traseira do joelho." }
+        { src: ligamentosDoJoelho5, titulo: "Vista Anterior dos Ligamentos do Joelho", descricao: descricaoVistaAnteriorDosLigamentosDoJoelho },
+        { src: ligamentosDoJoelho6, titulo: "Vista Medial dos Ligamentos do Joelho", descricao: descricaoVistaMedialDosLigamentosDoJoelho },
+        { src: ligamentosDoJoelho7, titulo: "Vista Lateral dos Ligamentos do Joelho", descricao: descricaoVistaLateralDosLigamentosDoJoelho },
+        { src: ligamentosDoJoelho8, titulo: "Vista Posterior dos Ligamentos do Joelho", descricao: descricaoVistaPosteriorDosLigamentosDoJoelho }
       ]
     },
     {
       id: "tibia",
       titulo: "Tíbia",
       imagens: [
-        { src: tibia12, titulo: "Vista Anterior da Tíbia", descricao: "A parte frontal da tíbia, localizada abaixo do joelho." },
-        { src: tibia13, titulo: "Vista Posterior da Tíbia", descricao: "A parte traseira da tíbia." }
+        { src: tibia12, titulo: "Vista Anterior da Tíbia", descricao: descricaoVistaAnteriorDaTibia },
+        { src: tibia13, titulo: "Vista Posterior da Tíbia", descricao: descricaoVistaPosteriorDaTibia }
       ]
     },
     {
       id: "tornozelo do pé",
       titulo: "Tornozelo do Pé",
       imagens: [
-        { src: tornozeloDoPe1, titulo: "Vista Plantar do Tornozelo", descricao: "A vista plantar mostra a parte inferior do tornozelo." },
-        { src: tornozeloDoPe2, titulo: "Vista Dorsal do Tornozelo", descricao: "Vista da parte superior do tornozelo." },
-        { src: tornozeloDoPe3, titulo: "Vista Medial do Tornozelo", descricao: "Mostra a parte interna do tornozelo." },
-        { src: tornozeloDoPe4, titulo: "Vista Lateral do Tornozelo", descricao: "A vista externa lateral do tornozelo." }
+        { src: tornozeloDoPe1, titulo: "Vista Plantar do Tornozelo", descricao: descricaoVistaPlantarDoTornozelo },
+        { src: tornozeloDoPe2, titulo: "Vista Dorsal do Tornozelo", descricao: descricaoVistaDorsalDoTornozelo },
+        { src: tornozeloDoPe3, titulo: "Vista Medial do Tornozelo", descricao: descricaoVistaMedialDoTornozelo },
+        { src: tornozeloDoPe4, titulo: "Vista Lateral do Tornozelo", descricao: descricaoVistaLateralDoTornozelo }
       ]
     }
   ]
