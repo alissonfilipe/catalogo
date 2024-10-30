@@ -79,12 +79,37 @@ const ParteDetalhada = () => {
             ></div>
           )}
         </div>
-        <div style={{ flex: 1 }}>
-          <h3>{imagemDetalhada.titulo}</h3> {/* Título da imagem */}
-          <p>{imagemDetalhada.descricao}</p> {/* Descrição da parte */}
+        <div
+          style={{
+            flex: 1,
+            padding: '15px',
+            border: '2px solid #ccc',
+            borderRadius: '8px',
+            boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+            backgroundColor: '#f9f9f9',
+          }}
+        >
+          <h3
+            style={{
+              fontWeight: 'bold',
+              fontSize: '1.5rem',
+              textAlign: 'center',
+              color: '#333',
+              marginBottom: '10px',
+            }}
+          >
+            {imagemDetalhada.titulo}
+          </h3>
+          <p
+            style={{
+              color: '#555',
+              margin: 0,
+            }}
+          >
+            {imagemDetalhada.descricao}
+          </p>
         </div>
       </div>
-
     </>
   );
 };
