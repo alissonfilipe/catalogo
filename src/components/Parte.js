@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import { partes } from '../components/dadosPartes'; // Importe os dados das partes
 import NotFound from '../pages/NotFound';
-import NavBar from './NavBar';
 import '../../src/styles/Parte.css'; // Importe o arquivo de estilos personalizados
 import NavBarPadrao from './NavBarPadrao';
 

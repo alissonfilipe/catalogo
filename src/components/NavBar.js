@@ -7,7 +7,7 @@ function NavBar() {
 
   useEffect(() => {
     // Adiciona padding-top ao body para evitar sobreposição com a NavBar fixa
-    document.body.style.paddingTop = '70px'; 
+    document.body.style.paddingTop = '70px';
   }, []);
 
   return (
@@ -23,10 +23,10 @@ function NavBar() {
     >
       {/* ImageButton em cima */}
       <ImageButton />
-      
+
       {/* Header embaixo */}
       {/* Retirei a parte do header */}
-      
+
     </nav>
   );
 }
