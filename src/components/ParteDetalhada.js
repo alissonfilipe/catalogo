@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import { partes } from '../components/dadosPartes';
@@ -12,6 +12,14 @@ const ParteDetalhada = () => {
   const [zoomPosition, setZoomPosition] = useState({ x: 50, y: 50 });
   const [isZoomedIn, setIsZoomedIn] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(true); // Assume que é desktop inicialmente
+
+  // Detecta se o dispositivo é mobile ou desktop
+  useEffect(() => {
+    const userAgent = navigator.userAgent.toLowerCase();
+    const isMobile = /iphone|ipod|android|windows phone/i.test(userAgent); // Verifica se é mobile
+    setIsDesktop(!isMobile); // Se for mobile, setIsDesktop será false
+  }, []);
 
   if (!parte || !parte.imagens[parteDetalhadaId]) {
     return <NotFound />;
@@ -19,29 +27,27 @@ const ParteDetalhada = () => {
 
   const imagemDetalhada = parte.imagens[parteDetalhadaId];
 
-  // Função para alternar o estado do zoom
+  // Alterna o estado do zoom
   const toggleZoom = () => {
-    setIsZoomedIn(!isZoomedIn);
-    if (!isZoomedIn) {
-      setShowMessage(false); // Desativa a mensagem de zoom ao ativar o zoom
+    if (isDesktop) {
+      setIsZoomedIn((prev) => !prev); // Alterna o estado de zoom somente se for desktop
+      setShowMessage(false); // Oculta a mensagem ao clicar para alternar o zoom
     }
   };
 
-  // Função para exibir a mensagem
+  // Exibe a mensagem quando o mouse entra na área da imagem (somente em desktop)
   const handleMouseEnter = () => {
-    if (!isZoomedIn) {
-      setShowMessage(true); // Exibe a mensagem ao passar o mouse
+    if (!isZoomedIn && isDesktop) {
+      setShowMessage(true);
     }
   };
 
-  // Função para ocultar a mensagem
+  // Oculta a mensagem quando o mouse sai da área da imagem
   const handleMouseLeave = () => {
-    if (!isZoomedIn) {
-      setShowMessage(false); // Esconde a mensagem ao sair com o mouse
-    }
+    setShowMessage(false);
   };
 
-  // Função para mover o zoom
+  // Move a imagem ao fazer o zoom
   const handleMouseMove = (e) => {
     if (!isZoomedIn) return;
 
@@ -62,7 +68,7 @@ const ParteDetalhada = () => {
               style={{
                 position: 'relative',
                 width: '100%',
-                cursor: isZoomedIn ? 'move' : 'pointer',
+                cursor: isZoomedIn ? 'move' : isDesktop ? 'pointer' : 'default', // Só ativa o pointer em desktop
                 overflow: 'hidden',
               }}
               onClick={toggleZoom}
@@ -70,8 +76,8 @@ const ParteDetalhada = () => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              {/* Mensagem no topo da imagem */}
-              {showMessage && (
+              {/* Mensagem exibida quando o mouse passa sobre a imagem */}
+              {showMessage && !isZoomedIn && isDesktop && (
                 <div
                   style={{
                     position: 'absolute',
@@ -87,7 +93,26 @@ const ParteDetalhada = () => {
                     pointerEvents: 'none',
                   }}
                 >
-                  {isZoomedIn ? 'Clique na imagem para sair do zoom' : 'Clique na imagem para dar zoom'}
+                  Clique na imagem para dar zoom
+                </div>
+              )}
+              {isZoomedIn && isDesktop && (
+                <div
+                  style={{
+                    position: 'absolute',
+                    top: '10px',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    padding: '8px 12px',
+                    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                    color: '#fff',
+                    borderRadius: '5px',
+                    fontSize: '0.9rem',
+                    zIndex: 1,
+                    pointerEvents: 'none',
+                  }}
+                >
+                  Clique na imagem para sair do zoom
                 </div>
               )}
 
