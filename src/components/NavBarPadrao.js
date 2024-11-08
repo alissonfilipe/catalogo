@@ -1,21 +1,21 @@
 import { useNavigate } from 'react-router-dom';
-import { useEffect } from "react";
 import logo from '../images/logo.png';
+import { useEffect } from 'react';
 
 function NavBarPadrao() {
     const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/');
+    };
 
     useEffect(() => {
         document.body.style.paddingTop = '70px';
     }, []);
 
-    const handleClick = () => {
-        navigate('/'); // Redireciona para a página inicial
-    };
-
     return (
         <nav
-            className="fixed-top"
+            className="fixed-top d-flex align-items-center justify-content-between"
             style={{
                 backgroundColor: '#fff',
                 borderBottom: '1px solid #ddd',
@@ -24,50 +24,40 @@ function NavBarPadrao() {
                 zIndex: '1030'
             }}
         >
-            <div className='d-flex justify-content-between align-items-center' style={{ padding: '10px 50px', width: '100%' }}>
-                {/* Ícones de redes sociais à esquerda (Escondidos em telas menores) */}
-                <div className='d-flex align-items-center d-none d-lg-flex'>
-                    <a href="https://www.instagram.com/unitpac.afya/" className='text-dark fs-3 me-3' target="_blank" rel="noopener noreferrer">
-                        <i className="bi bi-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/school/unitpac/" className='text-dark fs-3 me-3' target="_blank" rel="noopener noreferrer">
-                        <i className="bi bi-linkedin"></i>
-                    </a>
-                    <a href="https://www.youtube.com/unitpac" className='text-dark fs-3 me-3' target="_blank" rel="noopener noreferrer">
-                        <i className="bi bi-youtube"></i>
-                    </a>
-                    <a href="https://www.facebook.com/Unitpac" className='text-dark fs-3 me-3' target="_blank" rel="noopener noreferrer">
-                        <i className="bi bi-facebook"></i>
-                    </a>
-                    <a href="https://wa.me/yourphonenumber" className='text-dark fs-3 me-3' target="_blank" rel="noopener noreferrer">
-                        <i className="bi bi-whatsapp"></i>
-                    </a>
-                    <a href="https://www.tiktok.com/@unitpac" className='text-dark fs-3' target="_blank" rel="noopener noreferrer">
-                        <i className="bi bi-tiktok"></i>
-                    </a>
-                </div>
-
-                {/* Logo centralizada */}
-                <div className='d-flex justify-content-center flex-grow-1'>
-                    <img
-                        src={logo}
-                        alt="Logo"
-                        style={{
-                            cursor: 'pointer',
-                            width: '250px',
-                            height: 'auto',
-                            maxWidth: '100%',
-                            objectFit: 'contain'
-                        }}
-                        onClick={handleClick}
-                    />
-                </div>
-
-                {/* Placeholder à direita em telas menores */}
-                <div className='d-none d-lg-block'>
-                    {/* Este elemento permanece vazio, ocupando o espaço do lado direito em telas grandes */}
-                </div>
+            {/* Container para os ícones de redes sociais */}
+            <div className="d-flex align-items-center social-icons d-none d-md-flex">
+                <a href="https://www.instagram.com/unitpac.afya/" className='text-dark fs-3 me-3' target="_blank" rel="noopener noreferrer">
+                    <i className="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/school/unitpac/" className='text-dark fs-3 me-3' target="_blank" rel="noopener noreferrer">
+                    <i className="bi bi-linkedin"></i>
+                </a>
+                <a href="https://www.youtube.com/unitpac" className='text-dark fs-3 me-3' target="_blank" rel="noopener noreferrer">
+                    <i className="bi bi-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com/Unitpac" className='text-dark fs-3 me-3' target="_blank" rel="noopener noreferrer">
+                    <i className="bi bi-facebook"></i>
+                </a>
+                <a href="https://wa.me/yourphonenumber" className='text-dark fs-3 me-3' target="_blank" rel="noopener noreferrer">
+                    <i className="bi bi-whatsapp"></i>
+                </a>
+                <a href="https://www.tiktok.com/@unitpac" className='text-dark fs-3' target="_blank" rel="noopener noreferrer">
+                    <i className="bi bi-tiktok"></i>
+                </a>
             </div>
+
+            {/* Logo centralizada */}
+            <div className="d-flex justify-content-center flex-grow-1">
+                <img
+                    src={logo}
+                    alt="Logo"
+                    style={{ cursor: 'pointer', width: '350px', height: 'auto' }}
+                    onClick={handleClick}
+                />
+            </div>
+
+            {/* Espaço vazio para manter a centralização da logo em telas grandes */}
+            <div className="d-none d-md-flex" style={{ width: '200px' }}></div>
         </nav>
     );
 }

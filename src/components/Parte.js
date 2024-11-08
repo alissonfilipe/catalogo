@@ -5,6 +5,7 @@ import { partes } from '../components/dadosPartes'; // Importe os dados das part
 import NotFound from '../pages/NotFound';
 import NavBar from './NavBar';
 import '../../src/styles/Parte.css'; // Importe o arquivo de estilos personalizados
+import NavBarPadrao from './NavBarPadrao';
 
 const Parte = () => {
   const { parteId } = useParams(); // Pega o ID da parte da URL
@@ -16,7 +17,7 @@ const Parte = () => {
 
   return (
     <>
-      <NavBar />
+      <NavBarPadrao />
       <Container className="mt-5">
         <h1 className="mb-4 text-center" style={{ paddingTop: "30px" }}>{parte.titulo}</h1> {/* Nome da parte no topo, centralizado */}
 

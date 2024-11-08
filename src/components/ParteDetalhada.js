@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Image } from 'react-bootstrap';
 import { partes } from '../components/dadosPartes'; // Importe os dados das partes
 import NotFound from '../pages/NotFound';
-import NavBar from './NavBar';
+import NavBarPadrao from './NavBarPadrao';
 
 const ParteDetalhada = () => {
   const { parteId, parteDetalhadaId } = useParams(); // Pega os IDs da URL
@@ -28,7 +28,7 @@ const ParteDetalhada = () => {
 
   return (
     <>
-      <NavBar />
+      <NavBarPadrao />
       <h1 className='text-center' style={{ paddingTop: '90px' }}>{parte.titulo}</h1>
       <div
         style={{
