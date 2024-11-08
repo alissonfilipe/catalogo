@@ -11,7 +11,6 @@ const ParteDetalhada = () => {
 
   const [zoomPosition, setZoomPosition] = useState({ x: 50, y: 50 });
   const [isZoomedIn, setIsZoomedIn] = useState(false);
-  const [showMessage, setShowMessage] = useState(false);
   const [isDesktop, setIsDesktop] = useState(true); // Assume que é desktop inicialmente
 
   // Detecta se o dispositivo é mobile ou desktop
@@ -31,20 +30,7 @@ const ParteDetalhada = () => {
   const toggleZoom = () => {
     if (isDesktop) {
       setIsZoomedIn((prev) => !prev); // Alterna o estado de zoom somente se for desktop
-      setShowMessage(false); // Oculta a mensagem ao clicar para alternar o zoom
     }
-  };
-
-  // Exibe a mensagem quando o mouse entra na área da imagem (somente em desktop)
-  const handleMouseEnter = () => {
-    if (!isZoomedIn && isDesktop) {
-      setShowMessage(true);
-    }
-  };
-
-  // Oculta a mensagem quando o mouse sai da área da imagem
-  const handleMouseLeave = () => {
-    setShowMessage(false);
   };
 
   // Move a imagem ao fazer o zoom
@@ -73,49 +59,7 @@ const ParteDetalhada = () => {
               }}
               onClick={toggleZoom}
               onMouseMove={handleMouseMove}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
             >
-              {/* Mensagem exibida quando o mouse passa sobre a imagem */}
-              {showMessage && !isZoomedIn && isDesktop && (
-                <div
-                  style={{
-                    position: 'absolute',
-                    top: '10px',
-                    left: '50%',
-                    transform: 'translateX(-50%)',
-                    padding: '8px 12px',
-                    backgroundColor: 'rgba(0, 0, 0, 0.7)',
-                    color: '#fff',
-                    borderRadius: '5px',
-                    fontSize: '0.9rem',
-                    zIndex: 1,
-                    pointerEvents: 'none',
-                  }}
-                >
-                  Clique na imagem para dar zoom
-                </div>
-              )}
-              {isZoomedIn && isDesktop && (
-                <div
-                  style={{
-                    position: 'absolute',
-                    top: '10px',
-                    left: '50%',
-                    transform: 'translateX(-50%)',
-                    padding: '8px 12px',
-                    backgroundColor: 'rgba(0, 0, 0, 0.7)',
-                    color: '#fff',
-                    borderRadius: '5px',
-                    fontSize: '0.9rem',
-                    zIndex: 1,
-                    pointerEvents: 'none',
-                  }}
-                >
-                  Clique na imagem para sair do zoom
-                </div>
-              )}
-
               <Image
                 src={imagemDetalhada.src}
                 alt={imagemDetalhada.titulo}
