@@ -125,6 +125,9 @@
 - npm install -g serve `comando para instalar o serve`
 - serve -s build `comando para rodar o serve`
 
+- 08/11/2024
+- preciso corrigir a pesquisa dos dispoditivos móveis
+
 # Sistemas 
 - Sistema Esquelético
 - Sistema Muscular
