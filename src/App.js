@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import { Helmet } from 'react-helmet'; // Importe o Helmet
 import Home from './pages/Home';
+import Muscular from './pages/sistemas/Muscular';
 import Esqueletico from './pages/sistemas/Esqueletico';
 import Parte from './components/Parte';
 import ParteDetalhada from './components/ParteDetalhada';
@@ -22,6 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sistemas/esqueletico" element={<Esqueletico />} />
+            <Route path="/sistemas/muscular" element={<Muscular />} /> {/* <-- Adiciona essa rota aqui */}
             <Route path="/sistemas/esqueletico/parte/:parteId" element={<Parte />} />
             <Route path="/sistemas/esqueletico/parte/:parteId/parteDetalhada/:parteDetalhadaId" element={<ParteDetalhada />} />
             <Route path="*" element={<NotFound />} />

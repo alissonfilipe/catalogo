@@ -1,3 +1,9 @@
+Crie a imagem ImagemMuscular.jpg na pasta images/ImagensCentralizadas.
+
+Crie ou edite o arquivo public/text/sistemaMuscular.txt com as partes do sistema muscular.
+
+O componente ListaDePartes provavelmente exibe as partes em ordem alfabética com base nesse .txt. Se quiser mudar a ordem, você pode alterar no próprio .txt ou adicionar lógica no componente ListaDePartes.
+
 # Imagens grátis
 - https://pixabay.com/pt/
 
