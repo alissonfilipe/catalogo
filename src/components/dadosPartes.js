@@ -539,7 +539,7 @@ export const partes = {
       ]
     },
     {
-      id: "quadrilECoxa",
+      id: "quadril e coxa",
       titulo: "Quadril e Coxa",
       imagens: [
         { src: quadrilECoxaVistaAnterior, titulo: "Quadril e Coxa Vista Anterior", descricao: descricaoQuadrilECoxaVistaAnterior },

@@ -6,18 +6,17 @@ import NotFound from '../pages/NotFound';
 import NavBarPadrao from './NavBarPadrao';
 
 const ParteDetalhada = () => {
-  const { parteId, parteDetalhadaId } = useParams();
-  const parte = partes.esqueletico.find((p) => p.id === parteId);
+  const { sistema, parteId, parteDetalhadaId } = useParams(); // Agora pegamos também o sistema
+  const parte = partes[sistema]?.find((p) => p.id === parteId); // Busca dinâmica baseada no sistema
 
   const [zoomPosition, setZoomPosition] = useState({ x: 50, y: 50 });
   const [isZoomedIn, setIsZoomedIn] = useState(false);
-  const [isDesktop, setIsDesktop] = useState(true); // Assume que é desktop inicialmente
+  const [isDesktop, setIsDesktop] = useState(true);
 
-  // Detecta se o dispositivo é mobile ou desktop
   useEffect(() => {
     const userAgent = navigator.userAgent.toLowerCase();
-    const isMobile = /iphone|ipod|android|windows phone/i.test(userAgent); // Verifica se é mobile
-    setIsDesktop(!isMobile); // Se for mobile, setIsDesktop será false
+    const isMobile = /iphone|ipod|android|windows phone/i.test(userAgent);
+    setIsDesktop(!isMobile);
   }, []);
 
   if (!parte || !parte.imagens[parteDetalhadaId]) {
@@ -26,14 +25,12 @@ const ParteDetalhada = () => {
 
   const imagemDetalhada = parte.imagens[parteDetalhadaId];
 
-  // Alterna o estado do zoom
   const toggleZoom = () => {
     if (isDesktop) {
-      setIsZoomedIn((prev) => !prev); // Alterna o estado de zoom somente se for desktop
+      setIsZoomedIn((prev) => !prev);
     }
   };
 
-  // Move a imagem ao fazer o zoom
   const handleMouseMove = (e) => {
     if (!isZoomedIn) return;
 
@@ -54,7 +51,7 @@ const ParteDetalhada = () => {
               style={{
                 position: 'relative',
                 width: '100%',
-                cursor: isZoomedIn ? 'move' : isDesktop ? 'pointer' : 'default', // Só ativa o pointer em desktop
+                cursor: isZoomedIn ? 'move' : isDesktop ? 'pointer' : 'default',
                 overflow: 'hidden',
               }}
               onClick={toggleZoom}
