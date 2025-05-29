@@ -1,7 +1,9 @@
 A
+abdominais
 B
 C
 D
+deltoide
 E
 F
 G
@@ -14,10 +16,13 @@ M
 N
 O
 P
+perna
 Q
+quadril e coxa
 R
 S
 T
+torax
 U
 V
 W
