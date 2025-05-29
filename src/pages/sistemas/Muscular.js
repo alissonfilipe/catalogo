@@ -20,7 +20,8 @@ function Muscular() {
             <ImagemDoCentro link={ImagemMuscular} nome={"Anatomia muscular"} />
 
             {/* Lista de partes específicas do sistema muscular */}
-            <ListaDePartes texto={caminhoSistemaMuscular} />
+            <ListaDePartes texto={caminhoSistemaMuscular} sistema="muscular" />
+
         </>
     );
 }
